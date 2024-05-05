@@ -1,0 +1,156 @@
+FM1	Gearbox oil leakage	Seal ring damage or unqualified assembly	Reduce the life of worm gear transmission	Visual inspection
+FM2	Hydraulic cylinder leakage	Seal ring damage	Hydraulic system failure	Regular maintenance
+FM3	Insufficient bearing lubrication	Lubrication pipe blockage or insufficient lubricating oil	Bearing temperature rise	Regular maintenance
+FM4	Insufficient clamping force	Hydraulic pipe blockage or leakage	Workpiece loose or falling off	Regular inspection
+FM5	Gear wear	Insufficient lubrication	Vibration increase	Regular inspection
+FM6	Insufficient gear lubrication	Lubrication pipe blockage	Gear wear or vibration increase	Regular maintenance
+FM7	Excessively high motor temperature	Bearing damage or motor fan damage	Motor damage	CNC system alarm
+FM8	Workpiece axis accuracy decreased	Transmission system failure	Reduce machining accuracy	Regular inspection
+FM9	Insufficient cutting fluid flow	Pump damage or insufficient cutting fluid	Temperature rise in machining area	CNC system alarm
+FM10	Bearing wear	Insufficient lubrication or impurities in the bearing	Reduce machining accuracy	Regular inspection
+
+
+
+
+
+| S.NO | Entity           | Failure Mode        | System Effect       |
+|------|------------------|---------------------|---------------------|
+| 1.   | Driver           | Brake not applied — i.e. omission of input | Vehicle cannot Stop |
+| 2.   | Brake Brake      | Low Pressure Input  | Vehicle can Stop too late |
+|      |                  | High Pressure Input | Vehicle can Stop too early |
+|      |                  | Omission of input Value | Vehicle cannot Stop |
+| 3.   | Brake Control Unit (BCU) | Invalid input(Out of Range) | High or Low Retardation |
+| 4.   | Vehicle Control Unit (VCU) | Invalid input(Out of Range) | High or Low Retardation |
+
+
+
+
+
+
+| No | Component        | Symptom               | Failure Mode        | Cause                 | Failure affects   | Basic maintenance measures  |
+|----|------------------|-----------------------|---------------------|-----------------------|-------------------|-----------------------------|
+| 1  | Fuselage         | When refueling,       | Light does not      | Internal circuit      | Local influence   | Replacement parts           |
+|    | (wing) fuel      | "relief vent"         | shine               | failure               |                   |                             |
+|    | tank relief      | does not light        |                     |                       |                   |                             |
+|    | valve            |                       |                     |                       |                   |                             |
+| 2  | Fuel electric    | Electric switch       | Oil spill           | Sealing gasket        | Affect performa   | Replacement parts           |
+|    | switch           | indicator rod         |                     | aging                 | nce               |                             |
+|    |                  | junction leakage oil  |                     |                       |                   |                             |
+| 3  | Fuel gauge       | Former group, the     | Swing. Jitter.      | Oil indicator of      | Damage            | Replacement parts           |
+|    | indicator        | total group           |                     | Internal Bridge       |                   |                             |
+|    |                  | instruction swing     |                     | fault                 |                   |                             |
+| 4  | Switch           | Conversion switch set | Indicatin abn8rma   | Internal mechan       | Affect performa   | Replacement parts           |
+|    |                  | to "left wing when    |                     | cal failure           | nce               |                             |
+|    |                  | the indicator is      |                     |                       |                   |                             |
+|    |                  | incorrect             |                     |                       |                   |                             |
+| 5  | Gas turbine      | Not turn the engine   | Function failure    | Starter low           | Function failure  | Replacement parts           |
+|    | starter          | when starting         |                     | efficiency            |                   |                             |
+| 6  | Fuel level       | Lights are not bright | Light does not      | Fuel oil controlle    | Local influence   | Replacement parts           |
+|    | controller       | when refueling        | shine               | r damage              |                   |                             |
+
+
+
+| Item Number | Item Description | Function                         | FM. Id. | Failure Mode    | Local Effect                    | Next Higher Effects            | End Effects                    | Sev. | Detection Method | Compensating Provisions | Remarks |
+|-------------|------------------|----------------------------------|---------|-----------------|---------------------------------|--------------------------------|--------------------------------|------|------------------|------------------------|---------|
+| 1.1.1       | Main Pump        | Provides pressure when requested by Pilot Command | 1       | Fails to operate | No effect during this phase     | No effect during this phase    | No effect                      | IV   | Indication to pilot | None                 |         |
+|             |                  |                                  | 2       | Untimely operation | Untimely hydraulic pressure in Main Hydraulic Generation Assembly | Untimely pressure from Main Hydraulic Generation Assembly to Actuator Assembly | Untimely extension of Landing Gear | I    | Indication to pilot | None                 |         |
+| 1.1.2       | Check Valve (Main) | Prevents reverse flow          | 1       | Stuck closed     | Loss of fluid flow through the Main Generation Assembly check valve | No effect during this phase    | No effect                      | IV   | Indication to pilot | None                 |         |
+|             |                  |                                  | 2       | Stuck open       | Permits fluid flow through the main assembly check valve when not required | No effect during this phase    | No effect                      | IV   | Undetected        | None                 |         |
+
+
+
+| Part Number | Part Name | Failure Mode        | Failure Cause       | Detection Technique | Failure Effects           | Preventive and Recovery Precautions | P  | PN | n  | d  | C  |
+|-------------|-----------|---------------------|---------------------|---------------------|---------------------------|-------------------------------------|----|----|----|----|----|
+| -           | M-5 screw (on the horizontal shaft) might get loosened | -                   | Undesirable vibration    | Extra flapping and Unstable flight  | Blade unbalancing and rotor vibration | Preflight check (every 10 hrs)       | 1/3000 | 1  | 2  | 2  | 4  |
+| Pr H 03     | Hub       | Bearing of hub teetering damage | - Loss of lubricant | Hub mechanism is loose   | - Delay in control commands - Rotor vibration | Preflight check (every 10 hrs)       | 1/1000 | 2  | 2  | 2  | 8  |
+| Pr A 08 07  | Regulator | Damaged             | Due to any fault in its electronic system | No power transmitted to the avionics | - | Redundant part                       | 1/1000 | 2  | 3  | 3  | 18 |
+
+
+
+
+Function Requirements | Potential Failure Mode | Potential Effect(s) of Failure | Severity | Potential Cause(s)/Mechanism(s) of Failure | Occurrence | Detection | R.P.N.
+--- | --- | --- | --- | --- | --- | --- | ---
+Air leakage from cylinder assembly | Inadequate stroke of pusher cylinder | - | 4 | O-ring failure | 4 | 5 | 80
+Wear of pusher fingers | Marks on wares | - | 2 | High temperature wears out | - | - | 8
+Over travel in cylinder arm | Dents on bottles | - | 2 | Bad control | 3 | 1 | 6
+Broken bolt in pusher assembly | Over vibration and inappropriate operation | - | 4 | Misalignment, inappropriate tightening | - | - | 90
+Work loose of bolt of pusher assembly | Excessive vibration, undesirable operation | - | 5 | Inappropriate tightening, excessive temperature | - | - | 90
+Wear of piston of the pusher assembly | Clearance and play in the assembly | - | 4 | Lubrication, wear out | 5 | 7 | 140
+Transfer of hot glass wares from dead plate to silent chain of machine conveyor | Piston ring broken and wear | - | 4 | Lubrication, wear out | 6 | 6 | 144
+Internal Leakage | Loss/reduction of output force | - | 5 | Side loading and piston wear, contaminates past rod seal | 3 | 5 | 75
+External Leakage | Loss/reduction of output force | - | 4 | Seal leakage, piston-cylinder wear | 3 | 4 | 48
+Damaged rod seals | Contaminates entering pusher cylinder between shaft and cylinder | - | 5 | Excessive side loading | 4 | 6 | 120
+Spurious position change | Loss of output control or incorrect signal transmission | - | 3 | Stiction, binding | 2 | 4 | 24
+Jamming, seizure | Loss of load control | - | 3 | Excessive loading | 7 | 2 | 42
+Aeration | Damaged actuator and loss of seals | - | 5 | Air drawn past rod seals during actuation | 3 | 5 | 75
+Flange failure | In operation | - | 4 | Fracture, material faults | 3 | 3 | 36
+Bush loose on shaft | Loose coupling | - | 5 | Vibration | 6 | 6 | 180
+Damaged set screw of bushing | Bushing failure | - | 5 | Overtightening | 6 | 6 | 180
+Plate surface uneven | Leakage | - | 7 | Manufacturing error | 3 | 6 | 126
+Loose pusher finger | Wares un-transferable | - | 5 | Excessive temperature | 8 | 3 | 120
+
+
+
+--- | --- | --- | ---
+Very High | New technology/new design with no history. | ≥100 per thousand ≥ 1 in 10 | 10
+ | Failure is inevitable with new design, new application, or change in duty cycle/operating conditions. | 50 per thousand 1 in 20 | 9
+High | Failure is likely with new design, new application, or change in duty cycle/operating conditions. | 20 per thousand 1 in 50 | 8
+ | Failure is uncertain with new design, new application, or change in duty cycle/operating conditions. | 10 per thousand 1 in 100 | 7
+ | Frequent failures associated with similar designs or in design simulation and testing. | 2 per thousand 1 in 500 | 6
+Moderate | Occasional failures associated with similar designs or in design simulation and testing. | .5 per thousand 1 in 2,000 | 5
+ | Isolated failures associated with similar designs or in design simulation and testing. | .1 per thousand 1 in 10,000 | 4
+Low | Only isolated failures associated with almost identical design or in design simulation and testing. | .01 per thousand 1 in 100,000 | 3
+ | No observed failures associated with almost identical design or in design simulation and testing. | ≤.001 per thousand 1 in 1,000,000 | 2
+Very Low | Failure is eliminated through preventive control. Failure is eliminated through preventive control. | | 1
+
+
+
+| Sr. No | Braking Component | Failure Modes | Failure Causes | Failure Effects | S | O | D | RPN | Prevention Steps |
+|--------|--------------------|---------------|----------------|-----------------|---|---|---|-----|------------------|
+| 1 | Brake Pedals | Structural failure; bending and breaking of brake pedal | Wrong material, Low strength of pedal | Complete Braking Failure, Safety of operation is compromised | 10 | 5 | 6 | 300 | A material of High factor of safety must be chosen and given to analysis and testing. |
+| 2 | Master Cylinder | Piston failure, Piston seal failure | Excessive wear and tear | Leakage of brake fluids; Improper braking; Performance of the braking system is compromised | 8 | 5 | 6 | 240 | Periodic checking and replacement |
+| 3 | Brake Hose | Breakage of Brake hose | Wrong selection of material | Leakage of Brake-fluid which can cause improper braking and can even result in complete brake failure; Performance of the braking system is compromised | 7 | 6 | 4 | 168 | Periodic checking and replacement |
+| 4 | Brake Calipers | Uneven brake pads wear; Breakage of caliper brackets; Problems at joints | Excessive wear and tear; Accidents; Rough terrain travel, inadequate seal material. | Leakage of brake-fluids, Improper braking, clunking noise. | 10 | 6 | 5 | 300 | Periodic checking and replacement of brake pads, banjo fittings. |
+| 5 | Disk Brake Rotor | Wear and tear; Excessive heating; breakage of rotor | Improper material selection; Rough terrain travel; accidents | Vehicle is out of control due to damage to rotor, risk to operator's life. | 10 | 8 | 4 | 320 | Periodic checking and replacement; Proper selection of material; Effective analysis and testing |
+| 6 | Wheel Hub Assembly | Breakage of wheel hub assembly | Accidents; faulty mounting | Vehicle becomes inoperable | 9 | 3 | 4 | 108 | Use of standard rims |
+| 7 | Tires | Tread separation; sidewall failure | Improper puncture, Mounting of tires by foreign debris; Excessive inflation | Safety of the driver is at stake. Performance of the Braking system is severely affected | 8 | 7 | 3 | 118 | Regular checking and replacement of tires. Proper mounting. Adequate material testing |
+
+
+
+| S/N | Failure Mode       | Fault Impact | Fault Cause                    | Suggestions and Measures                        | S | O | D | RPN |
+|-----|--------------------|--------------|--------------------------------|------------------------------------------------|---|---|---|-----|
+| 1   | Stern tube and intermediate bearing high temperature | Propulsion system can’t work normally and stability | Installation clearance error between Bracket bearing and shaft | Boring round and installation process inspect in real time | 7 | 4 | 4 | 112 |
+|     |                    |              | Installation clearance error between Stern tube bearing and shaft | Boring round and installation process inspect in real time |   |   |   |     |
+| 2   | Shaft running with abnormal vibration | Shaft system operation can’t meet requirements | Shaft connection method is not reasonable | Determine and test shaft connection mode | 3 | 3 | 2 | 18 |
+|     |                    |              | Shafting stop installation is unreasonable | Check construction by installation standard |   |   |   |     |
+| 3   | Propulsion shafting performance parameters can’t meet the design requirements | Influence the propulsion system efficiency | Shaft installation not on the same theory straight line | Improve the shafting optical measurement precision | 6 | 6 | 5 | 180 |
+|     |                    |              | Shafting arrangement is not symmetric | Remeasure opening size according to shaft center line |   |   |   |     |
+| 4   | Navigation performance cannot meet the design requirements | The effect of navigation status | Aseismic capacity design is not reasonable | Strengthen design test | 3 | 2 | 6 | 36 |
+|     |                    |              | Structure distortion resistance design is not reasonable | Strengthen design test |   |   |   |     |
+| 5   | Shafting contacts seawater corrosion is serious | Affect the service life of the propulsion system | High temperature resistant material select unreasonable | Strengthen the material choice test | 4 | 2 | 3 | 24 |
+|     |                    |              | Seawater corrosion materials is not reasonable | Strengthen the material choice test |   |   |   |     |
+|     |                    |              | Shaft ground device installation is unreasonable | Check grounding device location correction |   |   |   |     |
+| 6   | Local propulsion system water leakage | Influence propulsion system tightness and stability | Stern tube device installation is imperfect | Install and tighten all the again | 3 | 3 | 5 | 45 |
+|     |                    |              | Stern shaft sealing device installation is imperfect | Install and check the contact surface according to the specification |   |   |   |     |
+
+
+| Potential Failure Mode | Potential Failure Effect | SEV* | OCC* | DET* | RPN* | Action Recommended |
+|------------------------|--------------------------|------|------|------|------|--------------------|
+| Unauthorized access | - Unauthorized cash withdrawal - Very dissatisfied customer | 8 | 3 | 3 | 72 | Block ATM card after three failed authentication attempts |
+| Authentication failure | Annoyed customer | 3 | 5 | 5 | 75 | Install load balancer to distribute work-load across network links |
+| Cash not disbursed | Dissatisfied customer | 7 | 7 | 4 | 196 | Internal alert of low cash in ATM; Increase minimum cash threshold limit of heavily used ATMs to prevent out-of-cash instances |
+| Account debited but no cash disbursed | Very dissatisfied customer | 8 | 3 | 4 | 96 | Install load balancer to distribute workload across network links |
+| Extra cash dispensed | Bank loses money | 8 | 2 | 3 | 48 | Verification while loading cash in ATM |
+
+
+
+| Defect No. | Possible Effects of the Defect | Possible Causes of the Defect | Online Control of the Production Process |
+|------------|--------------------------------|--------------------------------|-----------------------------------------|
+| 1          | - Weakened piston-ring connection, - Lack of adhesion of the ring | - Low quality of the gas for refining, - Carelessly executed refining process | - Quality control of the refining gas, - Control during every refining process |
+| 2          | - Drop of the ring from the piston, - Seizure of the piston-ring | - Touching piston rings with bare hands, - Dirt and moisture, - Greasing of the ring | - Workstation and process control, - Control of the alphining alloy |
+| 3          | - Too poor properties of the piston, - Limited operating time of the piston | - Bad quality of crucibles, - No or poor melting loss removal | - Control during every gas refining process, - Workstation control |
+| 4          | - Bad alignment of the ring, - No connection with the piston, - Seizure of the ring, - Ring to be discarded | - Incorrect casting method, - The mechanical working carried out incorrectly, - Negligent alphining process | - Control of the process, - Quality control of the metal moulds and the ladle, - Control of the alphining process |
+| 5          | - No connection with the piston, - Low endurance of the ring, - Microporosity of the ring | - Incorrect casting iron method, - Poor condition of the furnace brickwork, - Poor condition of the metal moulds | - Control of the process of barrel casting, - Quality control of the metal moulds and the ladle |
+| 6          | - Too low hardness and properties of the piston, - Hindered heat treatment, - Reduced time of failure-free operation | - Low quality of batch materials, - No control of chemical composition, - Improper modification process | - Control of furnaces for melting of the alloys, - Control of the alloy melting process, - Control of chemical composition |
+| 7          | - Too poor properties of the piston, - Excessive porosity and low endurance, - Limited working life of the piston | - Bad quality of crucibles, - The metal moulds not covered, - The refining process carried out incorrectly | - Control during every gas refining process, - Workstations control, - Technological manuals control |
+

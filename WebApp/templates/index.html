@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Tool</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="/static/scripts.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Select a Device to Analyze</h1>
+    <div class="container">
+        <figure class="table" style="width:100%;">
+            <table class="ck-table-resized">
+                <colgroup>
+                    <col style="width:14.29%;">
+                    <col style="width:14.29%;">
+                    <col style="width:14.29%;">
+                    <col style="width:14.29%;">
+                    <col style="width:14.29%;">
+                    <col style="width:14.29%;">
+                    <col style="width:14.26%;">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td><div>Component</div></td>
+                        <td><div>Failure Mode</div></td>
+                        <td><div>Cause</div></td>
+                        <td><div>Effect</div></td>
+                        <td><div>Maintenance Strategy</div></td>
+
+                    </tr>
+                    <tr>
+                        <td><select id="component-select"></select></td>
+                        <td><select id="failure-mode-select"></select></td>
+                        <td><select id="cause-select"></select></td>
+                        <td><select id="effect-select"></select></td>
+                        <td><select id="action-select"></select></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="component-text" readonly></td>
+                        <td><input type="text" id="failure-mode-text" readonly></td>
+                        <td><input type="text" id="cause-text" readonly></td>
+                        <td><input type="text" id="effect-text" readonly></td>
+                        <td><input type="text" id="action-text" readonly></td>
+                    </tr>
+                </tbody>
+            </table>
+        </figure>
+    </div>
+</body>
+</html>

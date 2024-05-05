@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.list {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #1f1f1f;
+    color: #cccccc;
+    font-family: Consolas, 'Courier New', monospace;
+    font-size: 14px;
+}
+select {
+    width: 100%; 
+    background-color: #1f1f1f; 
+    color: #cccccc; 
+    border: none; 
+    font-family: Consolas, 'Courier New', monospace; 
+    font-size: 14px;
+}
