@@ -6,7 +6,7 @@ app = Flask(__name__)
 cache = Cache(app, config={'CACHE_TYPE': 'SimpleCache'})
 
 # Your OpenAI API key
-openai.api_key = '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'
+
 print("API Key Set:", openai.api_key)  # This should print the key to confirm it's set
 @cache.memoize(timeout=86400)
 def get_gpt_response(prompt):
