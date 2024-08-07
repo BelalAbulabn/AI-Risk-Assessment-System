@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/static/scripts.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Process</title>
+</head>
+<body>
+
+    <section class="device-sandbox centered-form">
+        <h2 class="title">Device Sandbox</h2>
+        <form id="device-form">
+            <textarea id="device-description" name="device-description" rows="4" cols="50"></textarea>
+            <label for="device-description">Device Description:</label>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="json-output">
+            <div id="loading-message-json" style="display: none;">Generating...</div>
+        </div>        <!-- <div id="loading-message">Loading...</div> -->
+    </section>
+    <div id="bag">
+        <select class="select" id="component-select"></select>
+        <select class="select" id="hazard-select"></select>
+        <button id="generateHazardsBtn">Generate Hazards</button>
+        <button id="generateRiskAnalysisBtn">Generate Risk Analysis</button>
+
+    </div>
+    <section class="risk-analysis">
+        <h2 class="title">Risk Analysis</h2>
+        <ul id="failure-mode-select"></ul>
+        <div id="loading-message" style="display: none;">Generating...</div> <!-- Loading message div -->
+
+        <div class="button-container">
+            <button id="texteditRiskAnalysis">Text Edit</button>
+            <button id="generateRiskEvaluationBtn">Generate Risk Evaluation</button>
+        </div>
+
+        
+        <!-- <div id="failure-mode-text" contenteditable="true"></div>  Editable div -->
+
+    </section>
+
+    <div class="arrow-container">
+        <div class="stick"></div>
+        <div class="arrow"></div>
+
+    </div>
+
+    <section class="risk-evaluation">
+        <h2 class="title">Risk Evaluation</h2>
+        <ul id="Evaluations"></ul>
+        <div id="loading-message-evaluation" style="display: none;">Generating...</div> <!-- Loading message div -->
+
+        <div class="button-container">
+            <button id="texteditRiskEvaluation">Text Edit</button>
+            <button id="generateRiskControlBtn">Generate Risk Control</button>
+        </div>
+    </section>
+
+    <div class="arrow-container">
+        <div class="stick"></div>
+        <div class="arrow"></div>
+    </div>
+
+    <section class="risk-control">
+        <h2 class="title">Risk Control</h2>
+        <ul id="risk-control-list"></ul>
+        <div id="loading-message-control" style="display: none;">Generating...</div> <!-- Loading message div -->
+
+        <div class="button-container">
+            <button id="texteditRiskControl">Text Edit</button>
+            <button id="generateResidualRiskBtn">Generate Residual Risk</button>
+        </div>
+    </section>
+
+    <div class="arrow-container">
+        <div class="stick"></div>
+        <div class="arrow"></div>
+    </div>
+
+    <section class="residual-risk">
+        <h2 class="title">Evaluation of Overall Residual Risk</h2>
+        <div id="results"></div>
+        <div id="loading-message-residual" style="display: none;">Generating...</div> <!-- Loading message div -->
+        <div class="button-container">
+            <button id="texteditResidualRisk">Text Edit</button>
+            <button id="generateResidualRiskBtn">Generate Residual Risk</button>
+        </div>
+    </section>
+    
+    <div class="arrow-container">
+        <div class="stick"></div>
+        <div class="arrow"></div>
+    </div>
+
+    <section class="management-review">
+        <h2 class="title">Risk Management Review</h2>
+        <div class="button-container">
+            <button id="texteditResidualRisk">Download</button>
+            <button id="generateResidualRiskBtn">Generate the final report</button>
+        </div>
+    </section>
+<!-- 
+    <div class="arrow-container">
+        <div class="stick"></div>
+        <div class="arrow"></div>
+    </div> -->
+
+    <!-- <section class="production-activities">
+        <h2 class="title">Production and Post-Production Activities</h2>
+        <ul>
+            <li>General activities</li>
+            <li>Information collection</li>
+            <li>Information review</li>
+            <li>Actions</li>
+        </ul>
+    </section> -->
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles_AutoComplete.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/static/AutoComplete.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Process</title>
+    <style>
+        /* Add some CSS for the suggestion */
+        .suggestion {
+            color: gray; /* Suggestion text color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- File Selection Section -->
+        <div id="file-selection" class="mt-4">
+            <h3 class="title">Select a File</h3>
+            <div class="form-group">
+                <label for="file-select">Available Files:</label>
+                <select id="file-select" class="form-control select">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+            <button id="loadFileBtn" class="btn btn-primary">Load File</button>
+            <div id="file-content" class="mt-3 contenteditable" contenteditable="true">
+                <!-- File content will be displayed here -->
+                <!-- Added contenteditable attribute for text input -->
+            </div>
+            <h2 class="text-center mb-4 title">Risk Management</h2>
+        </div>
+
+        <!-- Risk Analysis Section -->
+        <section class="risk-analysis mt-5">
+            <h2 class="text-center mb-4 title">Risk Analysis</h2>
+            <ul id="failure-mode-select" class="list-group mb-3 contenteditable" contenteditable="true"></ul>
+            <!-- Added contenteditable attribute for text input -->
+            <div id="loading-message" class="text-center" style="display: none;">Generating...</div>
+        </section>
+
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <!-- Risk Evaluation Section -->
+        <section class="risk-evaluation mt-5">
+            <h2 class="text-center mb-4 title">Risk Evaluation</h2>
+            <ul id="Evaluations" class="list-group mb-3 contenteditable" contenteditable="true"></ul>
+            <!-- Added contenteditable attribute for text input -->
+            <div id="loading-message-evaluation" class="text-center" style="display: none;">Generating...</div>
+        </section>
+
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <!-- Risk Control Section -->
+        <section class="risk-control mt-5">
+            <h2 class="text-center mb-4 title">Risk Control</h2>
+            <ul id="risk-control-list" class="list-group mb-3 contenteditable" contenteditable="true"></ul>
+            <!-- Added contenteditable attribute for text input -->
+            <div id="loading-message-control" class="text-center" style="display: none;">Generating...</div>
+        </section>
+
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <!-- Residual Risk Section -->
+        <section class="residual-risk mt-5">
+            <h2 class="text-center mb-4 title">Evaluation of Overall Residual Risk</h2>
+            <div id="results" class="mb-3 contenteditable" contenteditable="true"></div>
+            <!-- Added contenteditable attribute for text input -->
+            <div id="loading-message-residual" class="text-center" style="display: none;">Generating...</div>
+        </section>
+
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+
+        <!-- Risk Management Review Section -->
+        <section class="management-review mt-5">
+            <h2 class="text-center mb-4 title">Risk Management Review</h2>
+            <div id="management-review-list" class="mb-3 contenteditable" contenteditable="true"></div>
+            <!-- Added contenteditable attribute for text input -->
+        </section>
+    </div>
+</body>
+
+</html>

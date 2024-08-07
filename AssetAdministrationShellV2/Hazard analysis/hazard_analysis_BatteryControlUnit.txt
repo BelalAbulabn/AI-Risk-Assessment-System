@@ -1,0 +1,79 @@
+Asset Administration Shell Name: Electric car 
+Submodel Name: BatteryManagement
+Property Key: BatteryCapacity, Property Value: 75 kWh
+Property Key: Range, Property Value: 300 miles
+Component Name: BatteryControlUnit
+Hazard Response:
+[
+  {
+    "hazard": "Overheating",
+    "type": "Hardware",
+    "description": "Risk of thermal shutdown",
+    "detection_method": "Temperature sensors",
+    "mitigation_measure": "Active cooling system"
+  },
+  {
+    "hazard": "Data Corruption",
+    "type": "Software",
+    "description": "Loss of data integrity",
+    "detection_method": "Checksum verification",
+    "mitigation_measure": "Regular data backups"
+  },
+  {
+    "hazard": "Power Supply Failure",
+    "type": "Hardware",
+    "description": "Risk of loss of power",
+    "detection_method": "Power monitoring system",
+    "mitigation_measure": "Backup power source"
+  },
+  {
+    "hazard": "Insufficient Memory",
+    "type": "Hardware",
+    "description": "Memory overload leading to system crash",
+    "detection_method": "Memory usage monitoring",
+    "mitigation_measure": "Upgrade RAM capacity"
+  },
+  {
+    "hazard": "Processing Speed Limitation",
+    "type": "Hardware",
+    "description": "Inability to keep up with processing demands",
+    "detection_method": "Performance monitoring",
+    "mitigation_measure": "Upgrade processing speed"
+  },
+  {
+    "hazard": "Cooling System Failure",
+    "type": "Hardware",
+    "description": "Risk of overheating due to cooling system malfunction",
+    "detection_method": "Cooling system sensors",
+    "mitigation_measure": "Redundant cooling system"
+  },
+  {
+    "hazard": "Software Bug",
+    "type": "Software",
+    "description": "Unexpected behavior due to coding error",
+    "detection_method": "Code review and testing",
+    "mitigation_measure": "Regular software updates"
+  },
+  {
+    "hazard": "Battery Cell Overvoltage",
+    "type": "Hardware",
+    "description": "Risk of damage to battery cells",
+    "detection_method": "Voltage monitoring",
+    "mitigation_measure": "Overvoltage protection circuit"
+  },
+  {
+    "hazard": "CMU Communication Failure",
+    "type": "Hardware",
+    "description": "Loss of communication with CMUs",
+    "detection_method": "Communication status monitoring",
+    "mitigation_measure": "Redundant communication channels"
+  },
+  {
+    "hazard": "System Control Error",
+    "type": "Software",
+    "description": "Incorrect system control commands",
+    "detection_method": "Command verification",
+    "mitigation_measure": "Error handling protocols"
+  }
+]
+

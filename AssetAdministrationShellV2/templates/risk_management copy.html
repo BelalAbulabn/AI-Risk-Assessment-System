@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/static/scripts copy.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Management Process</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- File Selection Section -->
+        <div id="file-selection" class="mt-4">
+            <h3>Select a File</h3>
+            <div class="form-group">
+                <label for="file-select">Available Files:</label>
+                <select id="file-select" class="form-control">
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+            <button id="loadFileBtn" class="btn btn-info btn-block">Load File</button>
+            <div id="file-content" class="mt-3">
+                <!-- File content will be displayed here -->
+            </div>
+            <button id="texteditFileContent" class="btn btn-secondary">Text Edit</button>
+
+        </div>
+
+        <!-- Existing Content -->
+        <section class="device-sandbox">
+            <h2 class="text-center mb-4">Device Sandbox</h2>
+            <form id="device-form">
+                <div class="form-group">
+                    <label for="device-description">Device Description:</label>
+                    <textarea id="device-description" name="device-description" rows="4" class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+            </form>
+            <div id="json-output" class="mt-3">
+                <div id="loading-message-json" style="display: none;">Generating...</div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="{{ url_for('risk_management_process') }}" class="btn btn-secondary">Risk Management</a>
+            </div>
+        </section>
+        
+        <div id="bag" class="mt-4">
+            <div class="form-group">
+                <label for="component-select">Select Component:</label>
+                <select class="form-control" id="component-select"></select>
+            </div>
+            <div class="form-group">
+                <label for="hazard-select">Select Hazard:</label>
+                <select class="form-control" id="hazard-select"></select>
+            </div>
+            <button id="generateHazardsBtn" class="btn btn-info btn-block">Generate Hazards</button>
+            <button id="generateRiskAnalysisBtn" class="btn btn-info btn-block">Generate Risk Analysis</button>
+        </div>
+        
+        <section class="risk-analysis mt-5">
+            <h2 class="text-center mb-4">Risk Analysis</h2>
+            <ul id="failure-mode-select" class="list-group mb-3"></ul>
+            <div id="loading-message" class="text-center" style="display: none;">Generating...</div>
+            <div class="button-container text-center">
+                <button id="texteditRiskAnalysis" class="btn btn-secondary">Text Edit</button>
+                <button id="generateRiskEvaluationBtn" class="btn btn-primary">Generate Risk Evaluation</button>
+            </div>
+        </section>
+        
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+        
+        <section class="risk-evaluation mt-5">
+            <h2 class="text-center mb-4">Risk Evaluation</h2>
+            <ul id="Evaluations" class="list-group mb-3"></ul>
+            <div id="loading-message-evaluation" class="text-center" style="display: none;">Generating...</div>
+            <div class="button-container text-center">
+                <button id="texteditRiskEvaluation" class="btn btn-secondary">Text Edit</button>
+                <button id="generateRiskControlBtn" class="btn btn-primary">Generate Risk Control</button>
+            </div>
+        </section>
+        
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+        
+        <section class="risk-control mt-5">
+            <h2 class="text-center mb-4">Risk Control</h2>
+            <ul id="risk-control-list" class="list-group mb-3"></ul>
+            <div id="loading-message-control" class="text-center" style="display: none;">Generating...</div>
+            <div class="button-container text-center">
+                <button id="texteditRiskControl" class="btn btn-secondary">Text Edit</button>
+                <button id="generateResidualRiskBtn" class="btn btn-primary">Generate Residual Risk</button>
+            </div>
+        </section>
+        
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+        
+        <section class="residual-risk mt-5">
+            <h2 class="text-center mb-4">Evaluation of Overall Residual Risk</h2>
+            <div id="results" class="mb-3"></div>
+            <div id="loading-message-residual" class="text-center" style="display: none;">Generating...</div>
+            <div class="button-container text-center">
+                <button id="texteditResidualRisk" class="btn btn-secondary">Text Edit</button>
+                <button id="generateResidualRiskBtn" class="btn btn-primary">Generate Residual Risk</button>
+            </div>
+        </section>
+        
+        <div class="arrow-container text-center">
+            <div class="stick"></div>
+            <div class="arrow"></div>
+        </div>
+        
+        <section class="management-review mt-5">
+            <h2 class="text-center mb-4">Risk Management Review</h2>
+            <div class="button-container text-center">
+                <button id="downloadReport" class="btn btn-secondary">Download</button>
+                <button id="generateFinalReportBtn" class="btn btn-primary">Generate the Final Report</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

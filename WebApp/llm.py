@@ -1,0 +1,87 @@
+# from openai import OpenAI
+# from dotenv import load_dotenv
+# import os
+# import together
+# import openai
+# import os
+
+# # Load environment variables
+# # from dotenv import load_dotenv
+# # load_dotenv()
+
+# # Retrieve API keys
+# # openai.api_key = os.getenv('OPENAI_API_KEY')
+# # together.api_key = os.getenv('TOGETHER_API_KEY')
+
+# # # Example usage
+# # print("OpenAI API Key:", openai.api_key)
+# # print("Together API Key:", together.api_key)
+
+# # Load environment variables
+# # load_dotenv()
+
+# # Initialize API key from environment variables
+# # openai.api_key = os.getenv('OPENAI_API_KEY')
+# #
+# # Checking if the API key is successfully loaded
+# openai.api_key="sk-proj-s8M1DdVV7EAvK98QwrNrT3BlbkFJu2oPxJp2dqHJRlKsxaMt"
+
+# print(openai.api_key)
+# if not openai.api_key:
+#     raise ValueError("API key is not set. Please check your .env file.")
+
+# gpt_call_count = 0
+# client = OpenAI()
+
+# def gpt_model_call(prompt, model='Mixtral-8x22B'):
+#     openai.api_key="sk-proj-s8M1DdVV7EAvK98QwrNrT3BlbkFJu2oPxJp2dqHJRlKsxaMt"
+
+#     model_config = {
+#         'Llama_3': ('meta-llama/Llama-3-70b-chat-hf', 2000),
+#         'Mixtral-8x22B': ("mistralai/Mixtral-8x22B-Instruct-v0.1", 4048),
+#         'WizardLM-2': ("microsoft/WizardLM-2-8x22B", 2000),
+#         'gpt-3.5': ("gpt-3.5-turbo-0125", 2700),
+#         'gpt-4': ("gpt-4-0125-preview", 2700)
+#     }
+#     model_name, max_tokens = model_config.get(model)
+
+#     global gpt_call_count
+#     gpt_call_count += 1
+
+#     if model in ['gpt-4']:
+#         # openai.api_key = os.getenv('OPENAI_API_KEY')
+#         openai.api_key="sk-proj-s8M1DdVV7EAvK98QwrNrT3BlbkFJu2oPxJp2dqHJRlKsxaMt"
+
+#         model_response = client.chat.completions.create(
+#             model=model_name,
+#             response_format={"type": "json_object"},
+#             messages=[
+#                 {"role": "system", "content": "You are a helpful assistant designed to output JSON."},
+#                 {"role": "user", "content": prompt}
+#             ]
+#         )
+#         model_output = model_response.choices[0].message.content
+
+#     elif model in ['gpt-3.5']:
+#         # openai.api_key = os.getenv('OPENAI_API_KEY')
+#         openai.api_key="sk-proj-s8M1DdVV7EAvK98QwrNrT3BlbkFJu2oPxJp2dqHJRlKsxaMt"
+
+#         model_response = client.chat.completions.create(
+#             model=model_name,
+#             response_format={"type": "json_object"},
+#             messages=[
+#                 {"role": "system", "content": "You are a helpful assistant designed to output JSON."},
+#                 {"role": "user", "content": prompt}
+#             ]
+#         )
+#         model_output = model_response.choices[0].message.content
+#     else:
+#         model_response = together.Complete.create(
+#             prompt=prompt,
+#             model=model_name,
+#             max_tokens=max_tokens,
+#             temperature=0,
+#             stop=["\n\n"]
+#         )
+#         model_output = model_response['output']['choices'][0]['text'].strip()
+#     return model_output

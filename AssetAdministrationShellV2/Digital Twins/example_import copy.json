@@ -1,0 +1,279 @@
+{
+    "aas": [
+      {
+        "id": 1,
+        "global_asset_id": "GlobalAssetID_Auto001",
+        "asset_kind": "Instance",
+        "model_type": "AssetAdministrationShell",
+        "category": "Automotive",
+        "description": "Asset Administration Shell for an Electric Vehicle.",
+        "display_name": "EV_AAS",
+        "embedded_data_specifications": {
+          "documentation": "https://example.com/docs/electric_vehicle"},
+        "extensions": {
+          "extKey": "5 years"
+        },
+        "id_short": "EV_AAS_01",
+        "derived_from": null
+      }
+    ],
+    "submodels": [
+      {
+        "id": 2,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BatteryManagement",
+            "type": "Global"
+          }
+        ],
+        "name": "BatteryManagement_001",
+        "description": "Submodel describing the battery management system."
+      },
+      {
+        "id": 3,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "DriveTrain",
+            "type": "Global"
+          }
+        ],
+        "name": "DriveTrain_001",
+        "description": "Submodel describing the drive train system."
+      }
+
+    ],
+    "properties": [
+      {
+        "id": 2,
+        "submodel_id": 2,
+        "key": "BatteryCapacity",
+        "value": "75 kWh"
+      },
+      {
+        "id": 3,
+        "submodel_id": 2,
+        "key": "Range",
+        "value": "300 miles"
+      },
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "key": "MotorPower",
+        "value": "200 kW"
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "key": "Torque",
+        "value": "350 Nm"
+      }
+    ],
+    "components": [
+      {
+        "id": 2,
+        "submodel_id": 2,
+        "name": "BatteryPack",
+        "type": "Lithium-Ion",
+        "material": "Lithium",
+        "description": {
+          "usage": "Main battery pack for the electric vehicle."
+        },
+        "specifications": {
+          "voltage": "400V",
+          "current": "150A",
+          "capacity": "75 kWh",
+          "energy_density": "250 Wh/kg",
+          "charging_time": "1 hour (fast charging)",
+          "discharge_rate": "2C"
+        },
+        "operating_conditions": {
+          "temperature_range": "-20 to 60 C",
+          "humidity": "0 to 95% RH"
+        },
+        "usage_patterns": {
+          "daily_usage": "Average 100 miles",
+          "charging_cycles": "1000 cycles"
+        },
+        
+        "failure_modes": {
+          "thermal_runaway": "Risk of overheating",
+          "capacity_fade": "Reduction in capacity over time"
+        },
+
+
+        "detection_methods": {
+          "thermal_runaway": "Temperature sensors",
+          "capacity_fade": "Battery management system monitoring"
+        },
+        "mitigation_measures": {
+          "thermal_runaway": "Cooling system",
+          "capacity_fade": "Regular monitoring and calibration"
+        },
+
+
+        
+
+
+
+
+        "dependencies": {
+          "power_supply": "Requires 480V 3-phase power",
+          "cooling_system": "Requires external cooling system"
+        },
+        "interactions": {
+          "connected_to": "Main vehicle power system",
+          "controls": "Managed by vehicle's battery management system"
+        }
+      },
+      {
+        "id": 3,
+        "submodel_id": 2,
+        "name": "CoolingSystem",
+        "type": "Coolant",
+        "material": "Coolant Fluid",
+        "description": "Cooling system for the battery pack.",
+        "specifications": {
+          "flow_rate": "10 L/min",
+          "temperature_range": "-10 to 50 C",
+          "coolant_type": "Ethylene glycol-based"
+        },
+        "operating_conditions": {
+          "temperature_range": "-20 to 40 C",
+          "humidity": "0 to 100% RH"
+        },
+        "usage_patterns": {
+          "continuous_operation": "8 hours/day"
+        },
+
+        "failure_modes": {
+          "leakage": "Coolant leakage",
+          "pump_failure": "Coolant pump failure"
+        },
+
+
+        "detection_methods": {
+          "leakage": "Visual inspection for leaks",
+          "pump_failure": "Pressure sensor monitoring"
+        },
+        "mitigation_measures": {
+          "leakage": "Regular inspections",
+          "pump_failure": "Redundant pump system"
+        },
+
+        
+
+
+
+
+        "dependencies": {
+          "power_supply": "Requires connection to battery management system"
+        },
+        "interactions": {
+          "connected_to": "Battery cooling loop",
+          "controls": "Managed by battery management system"
+        }
+      },
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "name": "ElectricMotor",
+        "type": "AC Motor",
+        "material": "Aluminum",
+        "description": {
+          "usage": "Main motor for driving the vehicle."
+        },
+        "specifications": {
+          "efficiency": "95%",
+          "rpm": "15000",
+          "power_output": "200 kW",
+          "torque": "350 Nm"
+        },
+        "operating_conditions": {
+          "temperature_range": "-30 to 50 C",
+          "humidity": "0 to 90% RH"
+        },
+        "usage_patterns": {
+          "daily_operation": "Average 2 hours/day"
+        },
+
+        "failure_modes": {
+          "overheating": "Risk of overheating",
+          "bearing_wear": "Bearing wear and tear"
+        },
+
+
+        "detection_methods": {
+          "overheating": "Temperature sensors",
+          "bearing_wear": "Vibration analysis"
+        },
+        "mitigation_measures": {
+          "overheating": "Cooling system",
+          "bearing_wear": "Regular bearing replacements"
+        },
+
+
+
+       
+
+
+
+        "dependencies": {
+          "power_supply": "Requires 400V AC",
+          "cooling_system": "Integrated cooling system"
+        },
+        "interactions": {
+          "connected_to": "Drive train system",
+          "controls": "Managed by vehicle control unit"
+        }
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "name": "Transmission",
+        "type": "Automatic",
+        "material": "Steel",
+        "description": "Transmission system for the electric motor.",
+        "specifications": {
+          "gear_ratios": "2.5:1",
+          "max_torque": "400 Nm",
+          "efficiency": "92%"
+        },
+        "operating_conditions": {
+          "temperature_range": "-20 to 50 C",
+          "humidity": "0 to 95% RH"
+        },
+        "usage_patterns": {
+          "daily_operation": "Average 2 hours/day"
+        },
+
+        "failure_modes": {
+          "gear_wear": "Gear wear and tear",
+          "oil_leakage": "Transmission oil leakage"
+        },
+
+
+        "detection_methods": {
+          "gear_wear": "Noise and vibration analysis",
+          "oil_leakage": "Visual inspection"
+        },
+        "mitigation_measures": {
+          "gear_wear": "Regular oil changes and inspections",
+          "oil_leakage": "Seal inspections and replacements"
+        },
+
+
+        "dependencies": {
+          "cooling_system": "Requires connection to motor cooling system"
+        },
+        "interactions": {
+          "connected_to": "Drive train system",
+          "controls": "Managed by vehicle control unit"
+        }
+      }
+    ]
+}
+  

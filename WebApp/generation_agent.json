@@ -1,0 +1,16 @@
+{
+    "components": [
+        "ABS control module",
+        "Wheel speed sensors",
+        "Hydraulic pump",
+        "Brake lines",
+        "Brake calipers"
+    ],
+    "hazards": [
+        "Loss of braking power",
+        "ABS system failure",
+        "Wheel lock-up",
+        "Brake fluid leakage",
+        "Brake system overheating"
+    ]
+}

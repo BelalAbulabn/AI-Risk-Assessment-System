@@ -12,11 +12,195 @@
     font-family: Consolas, 'Courier New', monospace;
     font-size: 14px;
 }
-select {
+/* select {
     width: 100%; 
     background-color: #1f1f1f; 
     color: #cccccc; 
     border: none; 
     font-family: Consolas, 'Courier New', monospace; 
     font-size: 14px;
+} */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    padding: 20px;
+    width: 80%;
+    border: 1px solid #ccc;
+    margin: 5px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.arrow, .back-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.arrow {
+    border-top: 10px solid black;
+}
+
+.back-arrow {
+    border-bottom: 10px solid red; /* Red arrow indicating a failure feedback */
+    position: absolute;
+    top: -20px; /* Adjust this to fit the visual need */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stick {
+    width: 2px;
+    height: 30px;
+    background-color: black;
+}
+
+.side-failure {
+    width: 2px;
+    height: 20px;
+    background-color: red; /* Red to indicate failure path */
+    position: absolute;
+    right: -20px;
+    top: 50%;
+}
+
+.side-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid red; /* Arrow pointing right for side failure */
+    position: absolute;
+    right: -30px; /* Adjust based on the side-failure stick length */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.title {
+display: block; /* Use block to allow for margin auto */
+width: fit-content; /* Makes the width of the element as wide as its content */
+margin: 0 auto 10px; /* Centers the title horizontally and adds spacing below */
+padding: 10px;
+border: 1px solid black; /* Adds a border around the title */
+background-color: #ddd; /* Adds a background color */
+font-weight: bold; /* Makes the text bold */
+color: black; /* Sets text color */
+
+}
+.select{
+    /*  set the size */
+    width: 400 ;
+    height: 40 ;
+    /*  set the font size */#
+    font-size: 20 ;
+    /*  set the font color */
+    color: #000000 ;
+    /*  set the background color */
+    background-color: #ffffff ;
+    /*  set the border color */
+    border-color: #000000 ;
+    /*  set the border width */
+    border-width: 1 ;
+    /*  set the border style [solid, dotted, dashed, double, groove] */
+    border-style: solid ;
+    /*  set the border radius */
+    border-radius: 0 ;
+    /*  set the padding */
+    padding: 0 ;
+    /*  set the margin */
+    margin: 0 ;
+    /*  set the text alignment */
+    text-align: left ;
+    /*  set the postion in center of sector  */
+    position: center  ;
+    
+ }
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Optional: Add some space between the buttons */
+    margin-top: 20px; /* Optional: Add some margin at the top */
+}
+
+.button-container button {
+    padding: 10px 20px; /* Optional: Add padding to the buttons */
+    font-size: 16px; /* Optional: Adjust the font size */
+}
+
+#loading-message, #loading-message-evaluation, #loading-message-control, #loading-message-residual {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center; /* Center the text */
+}
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    margin-top: 50px;
+}
+.title {
+    margin-bottom: 30px;
+}
+#bag {
+    margin-top: 20px;
+}
+.select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#json-output {
+    margin-top: 20px;
+    white-space: pre-wrap; /* Preserve whitespace */
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+.centered-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+.centered-form textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+.centered-form button {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    /* 'make the button in the center of the page' */
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+.centered-form label {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%; /* Ensure the label takes up the full width for centering */
+
 }

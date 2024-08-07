@@ -1,0 +1,148 @@
+{
+    "aas": [
+        {
+            "id": 1,
+            "global_asset_id": "GlobalAssetID_001",
+            "asset_kind": "Instance",
+            "model_type": "AssetAdministrationShell",
+            "category": "CategoryA",
+            "description": "Digital twin of an air palne.",
+            "display_name": "AAS_air_palne",
+            "embedded_data_specifications": {"specKey": "specValue"},
+            "extensions": {"extKey": "extValue"},
+            "id_short": "AAS_air",
+            "derived_from": null
+        }
+    ],
+    "submodels": [
+        {
+            "id": 1,
+            "aas_id": 1,
+            "type": "ModelReference",
+            "keys": [{"key": "Key1", "type": "Global"}],
+            "name": "Airframe",
+            "description": "Submodel representing the airframe of the air palne."
+        },
+        {
+            "id": 2,
+            "aas_id": 1,
+            "type": "ModelReference",
+            "keys": [{"key": "Key2", "type": "Global"}],
+            "name": "PropulsionSystem",
+            "description": "Submodel representing the propulsion system of the air palne."
+        }
+    ],
+    "properties": [
+        {
+            "id": 1,
+            "submodel_id": 1,
+            "key": "Manufacturer",
+            "value": "Example Aircraft Company"
+        },
+        {
+            "id": 2,
+            "submodel_id": 2,
+            "key": "Thrust",
+            "value": "10000 lbf"
+        }
+    ],
+    "components": [
+        {
+            "id": 1,
+            "submodel_id": 2,
+            "name": "Engine",
+            "type": "Turbofan",
+            "material": "Aluminum",
+            "description": {
+                "usage": "Main propulsion engine for the air palne."
+            },
+            "specifications": {
+                "thrust_rating": "10000 lbf",
+                "fuel_type": "Jet A",
+                "fuel_consumption": "0.6 lb/lbf/h",
+                "maximum_rpm": "10000",
+                "operating_temperature": "-50 to 150 C"
+            },
+            "operating_conditions": {
+                "temperature_range": "-50 to 50 C",
+                "humidity": "0 to 100% RH"
+            },
+            "usage_patterns": {
+                "cruise_speed": "Mach 0.8",
+                "takeoff_cycles": "10000 cycles"
+            },
+
+            "failure_modes": {
+                "blade_failure": "Risk of turbine blade failure",
+                "fuel_leakage": "Potential fuel leakage"
+            },
+
+
+            "detection_methods": {
+                "blade_failure": "Vibration monitoring",
+                "fuel_leakage": "Fuel system pressure sensors"
+            },
+            "mitigation_measures": {
+                "blade_failure": "Regular blade inspections",
+                "fuel_leakage": "Fuel system integrity checks"
+            },
+
+
+
+            "dependencies": {
+                "fuel_system": "Requires Jet A fuel supply",
+                "cooling_system": "Requires engine cooling system"
+            },
+            "interactions": {
+                "connected_to": "Aircraft fuel system",
+                "controls": "Managed by aircraft engine control unit"
+            }
+        },
+        {
+            "id": 1,
+            "submodel_id": 2,
+            "name": "FuelSystem",
+            "type": "Fuel Distribution",
+            "material": "Aluminum",
+            "description": "Fuel distribution system for the air palne.",
+            "specifications": {
+                "fuel_capacity": "10000 gallons",
+                "fuel_type": "Jet A",
+                "pump_flow_rate": "500 gal/min",
+                "pressure_rating": "50 psi"
+            },
+            "operating_conditions": {
+                "temperature_range": "-40 to 50 C",
+                "humidity": "0 to 95% RH"
+            },
+            "usage_patterns": {
+                "fuel_consumption": "1 gal/mile"
+            },
+
+            "failure_modes": {
+                "leakage": "Fuel leakage",
+                "pump_failure": "Fuel pump failure"
+            },
+
+
+            "detection_methods": {
+                "leakage": "Visual inspection for leaks",
+                "pump_failure": "Flow rate monitoring"
+            },
+            "mitigation_measures": {
+                "leakage": "Regular leak checks",
+                "pump_failure": "Redundant pump system"
+            },
+
+
+            "dependencies": {
+                "engine": "Requires connection to aircraft engines",
+                "avionics_system": "Requires data from flight management system"
+            },
+            "interactions": {
+                "connected_to": "Aircraft engines",
+                "controls": "Managed by aircraft engine control unit"
+            }
+        }
+    ]
+}

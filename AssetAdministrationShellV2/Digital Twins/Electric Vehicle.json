@@ -1,0 +1,1233 @@
+{
+    "aas": [
+      {
+        "id": 1,
+        "global_asset_id": "GlobalAssetID_Auto001",
+        "asset_kind": "Instance",
+        "model_type": "AssetAdministrationShell",
+        "category": "Automotive",
+        "description": "Asset Administration Shell for an Electric Vehicle.",
+        "display_name": "EV_AAS",
+        "embedded_data_specifications": {
+          "documentation": "https://example.com/docs/electric_vehicle"
+        },
+        "extensions": {
+          "warrantyPeriod": "5 years"
+        },
+        "id_short": "EV_AAS_01",
+        "derived_from": null
+      }
+    ],
+    "submodels": [
+      {
+        "id": 2,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BatteryManagement",
+            "type": "Global"
+          }
+        ],
+        "name": "BatteryManagement_001",
+        "description": "Submodel describing the battery management system."
+      },
+      {
+        "id": 3,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "DriveTrain",
+            "type": "Global"
+          }
+        ],
+        "name": "DriveTrain_001",
+        "description": "Submodel describing the drive train system."
+      },
+      {
+        "id": 4,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ChargingSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "ChargingSystem_001",
+        "description": "Submodel describing the charging system."
+      },
+      {
+        "id": 5,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "Infotainment",
+            "type": "Global"
+          }
+        ],
+        "name": "Infotainment_001",
+        "description": "Submodel describing the infotainment system."
+      },
+      {
+        "id": 6,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ClimateControl",
+            "type": "Global"
+          }
+        ],
+        "name": "ClimateControl_001",
+        "description": "Submodel describing the climate control system."
+      },
+      {
+        "id": 7,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ADAS",
+            "type": "Global"
+          }
+        ],
+        "name": "ADAS_001",
+        "description": "Submodel describing the advanced driver-assistance systems."
+      },
+      {
+        "id": 8,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "SuspensionSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "SuspensionSystem_001",
+        "description": "Submodel describing the suspension system."
+      },
+      {
+        "id": 9,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BrakingSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "BrakingSystem_001",
+        "description": "Submodel describing the braking system."
+      },
+      {
+        "id": 10,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "SteeringSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "SteeringSystem_001",
+        "description": "Submodel describing the steering system."
+      },
+      {
+        "id": 11,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "Telematics",
+            "type": "Global"
+          }
+        ],
+        "name": "Telematics_001",
+        "description": "Submodel describing the telematics system."
+      },
+      {
+        "id": 12,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "LightingSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "LightingSystem_001",
+        "description": "Submodel describing the lighting system."
+      },
+      {
+        "id": 13,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "NavigationSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "NavigationSystem_001",
+        "description": "Submodel describing the navigation system."
+      },
+      {
+        "id": 14,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "InteriorFeatures",
+            "type": "Global"
+          }
+        ],
+        "name": "InteriorFeatures_001",
+        "description": "Submodel describing the interior features."
+      },
+      {
+        "id": 15,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ExteriorFeatures",
+            "type": "Global"
+          }
+        ],
+        "name": "ExteriorFeatures_001",
+        "description": "Submodel describing the exterior features."
+      },
+      {
+        "id": 16,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "SafetyFeatures",
+            "type": "Global"
+          }
+        ],
+        "name": "SafetyFeatures_001",
+        "description": "Submodel describing the safety features."
+      },
+      {
+        "id": 17,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "Connectivity",
+            "type": "Global"
+          }
+        ],
+        "name": "Connectivity_001",
+        "description": "Submodel describing the connectivity features."
+      },
+      {
+        "id": 18,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "PowerElectronics",
+            "type": "Global"
+          }
+        ],
+        "name": "PowerElectronics_001",
+        "description": "Submodel describing the power electronics system."
+      },
+      {
+        "id": 19,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ThermalManagement",
+            "type": "Global"
+          }
+        ],
+        "name": "ThermalManagement_001",
+        "description": "Submodel describing the thermal management system."
+      },
+      {
+        "id": 20,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "EnergyStorage",
+            "type": "Global"
+          }
+        ],
+        "name": "EnergyStorage_001",
+        "description": "Submodel describing the energy storage system."
+      },
+      {
+        "id": 21,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BodyControl",
+            "type": "Global"
+          }
+        ],
+        "name": "BodyControl_001",
+        "description": "Submodel describing the body control system."
+      },
+      {
+        "id": 22,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "VehicleDynamics",
+            "type": "Global"
+          }
+        ],
+        "name": "VehicleDynamics_001",
+        "description": "Submodel describing the vehicle dynamics."
+      }
+    ],
+    "properties": [
+      {
+        "id": 2,
+        "submodel_id": 2,
+        "key": "BatteryCapacity",
+        "value": "75 kWh"
+      },
+      {
+        "id": 3,
+        "submodel_id": 2,
+        "key": "Range",
+        "value": "300 miles"
+      },
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "key": "MotorPower",
+        "value": "200 kW"
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "key": "Torque",
+        "value": "350 Nm"
+      }
+    ],
+    
+      "components": [
+        {
+          "id": 1,
+          "submodel_id": 2,
+          "name": "BatteryCells",
+          "type": "Lithium-Ion",
+          "material": "Lithium",
+          "description": {
+            "usage": "The fundamental units that store and release electrical energy. Lithium-ion cells are commonly used in EVs."
+          },
+          "specifications": {
+            "voltage": "3.7V",
+            "capacity": "5000mAh",
+            "energy_density": "250 Wh/kg"
+          },
+          "operating_conditions": {
+            "temperature_range": "-20 to 60 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "daily_usage": "Varies by vehicle",
+            "charging_cycles": "1000 cycles"
+          },
+         
+          "failure_modes": {
+            "thermal_runaway": "Risk of overheating",
+            "capacity_fade": "Reduction in capacity over time"
+          },
+          
+          
+          "detection_methods": {
+            "thermal_runaway": "Temperature sensors",
+            "capacity_fade": "Battery management system monitoring"
+          },
+          "mitigation_measures": {
+            "thermal_runaway": "Cooling system",
+            "capacity_fade": "Regular monitoring and calibration"
+          },
+
+          
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 480V 3-phase power",
+            "cooling_system": "Requires external cooling system"
+          },
+          "interactions": {
+            "connected_to": "Battery management system",
+            "controls": "Managed by vehicle's battery management system"
+          }
+        },
+        {
+          "id": 2,
+          "submodel_id": 2,
+          "name": "CellMonitoringUnit",
+          "type": "CMU",
+          "material": "Silicon",
+          "description": {
+            "usage": "Monitors the voltage, temperature, and state of charge (SoC) of individual cells or groups of cells within the battery pack."
+          },
+          "specifications": {
+            "voltage_range": "0-5V",
+            "temperature_range": "-40 to 125 C",
+            "sampling_rate": "1 kHz"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 125 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "monitoring_frequency": "Continuous"
+          },
+          
+          "failure_modes": {
+            "sensor_failure": "Inaccurate readings",
+            "communication_loss": "Loss of data transmission"
+          },
+          
+          
+          "detection_methods": {
+            "sensor_failure": "Self-diagnosis",
+            "communication_loss": "Data integrity checks"
+          },
+          "mitigation_measures": {
+            "sensor_failure": "Redundancy",
+            "communication_loss": "Failover protocols"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery management system",
+            "controls": "Reports to Battery Control Unit"
+          }
+        },
+        {
+          "id": 3,
+          "submodel_id": 2,
+          "name": "BatteryControlUnit",
+          "type": "BCU",
+          "material": "Silicon",
+          "description": {
+            "usage": "Acts as the central processing unit of the BMS, processing data from CMUs and managing the overall battery system. It handles charge balancing, thermal management, and fault detection."
+          },
+          "specifications": {
+            "processing_speed": "1 GHz",
+            "memory": "512 MB RAM",
+            "power_consumption": "10W"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "processing_load": "Continuous"
+          },
+         
+          "failure_modes": {
+            "overheating": "Risk of thermal shutdown",
+            "data_corruption": "Loss of data integrity"
+          },
+         
+          "detection_methods": {
+            "overheating": "Temperature sensors",
+            "data_corruption": "Checksum verification"
+          },
+          "mitigation_measures": {
+            "overheating": "Cooling system",
+            "data_corruption": "Regular backups"
+          },
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 12V DC",
+            "cooling_system": "Requires active cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Cells, CMU",
+            "controls": "Manages overall battery system"
+          }
+        },
+        {
+          "id": 4,
+          "submodel_id": 2,
+          "name": "StateOfChargeEstimator",
+          "type": "SoC",
+          "material": "Silicon",
+          "description": {
+            "usage": "Determines the remaining capacity of the battery, crucial for range estimation and preventing overcharge or deep discharge."
+          },
+          "specifications": {
+            "accuracy": "1%",
+            "sampling_rate": "1 Hz"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "estimation_frequency": "Continuous"
+          },
+         
+          "failure_modes": {
+            "sensor_failure": "Inaccurate SoC readings",
+            "data_loss": "Loss of estimation data"
+          },
+          
+
+          "detection_methods": {
+            "sensor_failure": "Self-diagnosis",
+            "data_loss": "Redundant data storage"
+          },
+          "mitigation_measures": {
+            "sensor_failure": "Regular calibration",
+            "data_loss": "Backup systems"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 3.3V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Provides SoC data"
+          }
+        },
+        {
+          "id": 5,
+          "submodel_id": 2,
+          "name": "StateOfHealthEstimator",
+          "type": "SoH",
+          "material": "Silicon",
+          "description": {
+            "usage": "Assesses the overall health and aging status of the battery pack, helping predict the battery's lifespan and performance degradation over time."
+          },
+          "specifications": {
+            "accuracy": "2%",
+            "sampling_rate": "1 Hz"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "estimation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "sensor_failure": "Inaccurate SoH readings",
+            "data_loss": "Loss of health data"
+          },
+          
+         
+          "detection_methods": {
+            "sensor_failure": "Self-diagnosis",
+            "data_loss": "Redundant data storage"
+          },
+          "mitigation_measures": {
+            "sensor_failure": "Regular calibration",
+            "data_loss": "Backup systems"
+          },
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 3.3V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Provides SoH data"
+          }
+        },
+        {
+          "id": 6,
+          "submodel_id": 2,
+          "name": "TemperatureManagementSystem",
+          "type": "ThermalManagement",
+          "material": "Various",
+          "description": {
+            "usage": "Includes temperature sensors and a thermal management system (cooling/heating mechanisms) to maintain optimal operating temperatures and prevent thermal runaway."
+          },
+          "specifications": {
+            "cooling_capacity": "10 kW",
+            "heating_capacity": "5 kW"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "pump_failure": "Loss of cooling/heating",
+            "sensor_failure": "Inaccurate temperature readings"
+          },
+        
+          "detection_methods": {
+            "pump_failure": "Flow sensors",
+            "sensor_failure": "Self-diagnosis"
+          },
+          "mitigation_measures": {
+            "pump_failure": "Redundancy",
+            "sensor_failure": "Regular calibration"
+          },
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 220V AC",
+            "cooling_system": "Requires external cooling/heating system"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages thermal conditions"
+          }
+        },
+        {
+          "id": 7,
+          "submodel_id": 2,
+          "name": "BalancingCircuitry",
+          "type": "Balancing",
+          "material": "Silicon",
+          "description": {
+            "usage": "Ensures uniform charge distribution among all cells to prevent imbalances that can reduce battery performance and lifespan. Techniques include passive or active balancing."
+          },
+          "specifications": {
+            "balancing_method": "Active",
+            "balancing_current": "500 mA"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "balancing_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "circuit_failure": "Ineffective balancing",
+            "sensor_failure": "Inaccurate readings"
+          },
+          
+        
+          "detection_methods": {
+            "circuit_failure": "Self-diagnosis",
+            "sensor_failure": "Data integrity checks"
+          },
+          "mitigation_measures": {
+            "circuit_failure": "Redundancy",
+            "sensor_failure": "Regular calibration"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 12V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages cell balancing"
+          }
+        },
+        {
+          "id": 8,
+          "submodel_id": 2,
+          "name": "ProtectionCircuitry",
+          "type": "Protection",
+          "material": "Silicon",
+          "description": {
+            "usage": "Protects the battery pack from over-voltage, under-voltage, over-current, short circuits, and overheating. Includes hardware safety mechanisms like fuses and circuit breakers."
+          },
+          "specifications": {
+            "protection_methods": "Fuses, Circuit Breakers",
+            "response_time": "10 ms"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "over_voltage": "Damage to cells",
+            "short_circuit": "Potential fire hazard"
+          },
+          
+          "detection_methods": {
+            "over_voltage": "Voltage sensors",
+            "short_circuit": "Current sensors"
+          },
+          "mitigation_measures": {
+            "over_voltage": "Fuses",
+            "short_circuit": "Circuit Breakers"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 12V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages protection mechanisms"
+          }
+        },
+        {
+          "id": 9,
+          "submodel_id": 2,
+          "name": "CommunicationInterface",
+          "type": "Communication",
+          "material": "Silicon",
+          "description": {
+            "usage": "Allows the BMS to communicate with other vehicle systems, such as the vehicle control unit (VCU), chargers, and user interfaces. Common protocols include CAN (Controller Area Network) and LIN (Local Interconnect Network)."
+          },
+          "specifications": {
+            "protocols_supported": "CAN, LIN",
+            "data_rate": "1 Mbps"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "communication_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "communication_loss": "Loss of data transmission",
+            "protocol_error": "Data corruption"
+          },
+         
+          "detection_methods": {
+            "communication_loss": "Data integrity checks",
+            "protocol_error": "Error detection codes"
+          },
+          "mitigation_measures": {
+            "communication_loss": "Redundancy",
+            "protocol_error": "Error correction codes"
+          },
+
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages communication protocols"
+          }
+        },
+        {
+          "id": 10,
+          "submodel_id": 2,
+          "name": "CurrentSensors",
+          "type": "CurrentMeasurement",
+          "material": "Silicon",
+          "description": {
+            "usage": "Measure the charge and discharge current of the battery pack, assisting in SoC calculations and energy flow monitoring."
+          },
+          "specifications": {
+            "current_range": "0-500A",
+            "accuracy": "1%"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "measurement_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "sensor_failure": "Inaccurate current readings",
+            "data_loss": "Loss of current data"
+          },
+          
+         
+          "detection_methods": {
+            "sensor_failure": "Self-diagnosis",
+            "data_loss": "Redundant data storage"
+          },
+          "mitigation_measures": {
+            "sensor_failure": "Regular calibration",
+            "data_loss": "Backup systems"
+          },
+
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Provides current data"
+          }
+        },
+        {
+          "id": 11,
+          "submodel_id": 2,
+          "name": "DiagnosticAndLoggingSystem",
+          "type": "Diagnostics",
+          "material": "Silicon",
+          "description": {
+            "usage": "Records data and events related to battery performance, faults, and anomalies, aiding in maintenance, troubleshooting, and performance analysis."
+          },
+          "specifications": {
+            "storage_capacity": "64 GB",
+            "logging_rate": "1 Hz"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "logging_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "storage_failure": "Loss of logged data",
+            "sensor_failure": "Inaccurate diagnostic readings"
+          },
+         
+         
+          "detection_methods": {
+            "storage_failure": "Redundant storage",
+            "sensor_failure": "Self-diagnosis"
+          },
+          "mitigation_measures": {
+            "storage_failure": "Regular backups",
+            "sensor_failure": "Regular calibration"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages diagnostic data"
+          }
+        },
+        {
+          "id": 12,
+          "submodel_id": 2,
+          "name": "CutoffFETsAndFETDriver",
+          "type": "FET",
+          "material": "Silicon",
+          "description": {
+            "usage": "Responsible for connecting and isolating the battery pack between the load and charger based on measurements from battery cell voltages, current measurements, and real-time detection circuitry."
+          },
+          "specifications": {
+            "cutoff_voltage": "450V",
+            "cutoff_current": "200A"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 125 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "over_voltage": "FET damage",
+            "over_current": "FET failure"
+          },
+         
+         
+          "detection_methods": {
+            "over_voltage": "Voltage sensors",
+            "over_current": "Current sensors"
+          },
+          "mitigation_measures": {
+            "over_voltage": "Fuses",
+            "over_current": "Circuit Breakers"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 12V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages FET operation"
+          }
+        },
+        {
+          "id": 13,
+          "submodel_id": 2,
+          "name": "FuelGaugeMonitor",
+          "type": "FuelGauge",
+          "material": "Silicon",
+          "description": {
+            "usage": "Keeps track of the charge entering and exiting the battery pack, often using current sense amplifiers or high-resolution ADCs to ensure accurate measurements."
+          },
+          "specifications": {
+            "measurement_accuracy": "1%",
+            "current_range": "0-500A"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "measurement_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "sensor_failure": "Inaccurate fuel gauge readings",
+            "data_loss": "Loss of measurement data"
+          },
+         
+          "detection_methods": {
+            "sensor_failure": "Self-diagnosis",
+            "data_loss": "Redundant data storage"
+          },
+          "mitigation_measures": {
+            "sensor_failure": "Regular calibration",
+            "data_loss": "Backup systems"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Provides fuel gauge data"
+          }
+        },
+        {
+          "id": 14,
+          "submodel_id": 2,
+          "name": "RealTimeClock",
+          "type": "RTC",
+          "material": "Silicon",
+          "description": {
+            "usage": "Provides time-stamping for data logging and black box applications, helping track the battery pack’s behavior over time."
+          },
+          "specifications": {
+            "accuracy": "±1s/day",
+            "power_consumption": "1mW"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "time_drift": "Inaccurate timekeeping",
+            "power_failure": "Loss of time data"
+          },
+         
+          "detection_methods": {
+            "time_drift": "Periodic time sync",
+            "power_failure": "Power monitoring"
+          },
+          "mitigation_measures": {
+            "time_drift": "Regular time synchronization",
+            "power_failure": "Backup battery"
+          },
+
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 3V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Provides time data"
+          }
+        },
+        {
+          "id": 15,
+          "submodel_id": 2,
+          "name": "StateMachineOrAlgorithms",
+          "type": "Algorithms",
+          "material": "Silicon",
+          "description": {
+            "usage": "Manages the information from sensing circuitry and makes decisions based on pre-programmed algorithms. Some systems use an MCU or FPGA for this purpose."
+          },
+          "specifications": {
+            "processing_speed": "1 GHz",
+            "memory": "256 MB RAM",
+            "power_consumption": "5W"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "algorithm_error": "Incorrect decisions",
+            "hardware_failure": "Loss of control"
+          },
+         
+          
+          "detection_methods": {
+            "algorithm_error": "Error checking",
+            "hardware_failure": "Self-diagnosis"
+          },
+          "mitigation_measures": {
+            "algorithm_error": "Regular updates",
+            "hardware_failure": "Redundancy"
+          },
+
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages system algorithms"
+          }
+        },
+        {
+          "id": 16,
+          "submodel_id": 2,
+          "name": "BatteryAuthentication",
+          "type": "Authentication",
+          "material": "Silicon",
+          "description": {
+            "usage": "Prevents the BMS electronics from being connected to unauthorized or third-party battery packs, ensuring compatibility and safety."
+          },
+          "specifications": {
+            "authentication_method": "Digital signature",
+            "response_time": "1 ms"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "On connection"
+          },
+
+          "failure_modes": {
+            "authentication_failure": "Unauthorized access",
+            "hardware_failure": "Loss of authentication"
+          },
+        
+          
+          "detection_methods": {
+            "authentication_failure": "Self-diagnosis",
+            "hardware_failure": "Redundant systems"
+          },
+          "mitigation_measures": {
+            "authentication_failure": "Regular updates",
+            "hardware_failure": "Redundancy"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 3.3V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages authentication processes"
+          }
+        },
+        {
+          "id": 17,
+          "submodel_id": 2,
+          "name": "VoltageReferenceRegulator",
+          "type": "VoltageRegulator",
+          "material": "Silicon",
+          "description": {
+            "usage": "Powers peripheral circuitry around the BMS system, providing stable voltage references."
+          },
+          "specifications": {
+            "output_voltage": "3.3V",
+            "current_output": "2A"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 125 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "voltage_fluctuation": "Inconsistent power supply",
+            "hardware_failure": "Loss of power"
+          },
+         
+         
+          "detection_methods": {
+            "voltage_fluctuation": "Voltage monitoring",
+            "hardware_failure": "Self-diagnosis"
+          },
+          "mitigation_measures": {
+            "voltage_fluctuation": "Voltage stabilizers",
+            "hardware_failure": "Redundancy"
+          },
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Provides stable voltage"
+          }
+        },
+        {
+          "id": 18,
+          "submodel_id": 2,
+          "name": "DaisyChainCircuitry",
+          "type": "DaisyChain",
+          "material": "Silicon",
+          "description": {
+            "usage": "Simplifies the connection between stacked devices, replacing the need for optical couplers or other level shifting circuitry."
+          },
+          "specifications": {
+            "communication_protocol": "SPI",
+            "data_rate": "10 Mbps"
+          },
+          "operating_conditions": {
+            "temperature_range": "-40 to 85 C",
+            "humidity": "0 to 95% RH"
+          },
+          "usage_patterns": {
+            "operation_frequency": "Continuous"
+          },
+
+          "failure_modes": {
+            "communication_loss": "Loss of data transmission",
+            "hardware_failure": "Loss of connectivity"
+          },
+         
+         
+          "detection_methods": {
+            "communication_loss": "Data integrity checks",
+            "hardware_failure": "Self-diagnosis"
+          },
+          "mitigation_measures": {
+            "communication_loss": "Redundancy",
+            "hardware_failure": "Backup systems"
+          },
+
+
+
+
+
+          "dependencies": {
+            "power_supply": "Requires 5V DC",
+            "cooling_system": "Requires passive cooling"
+          },
+          "interactions": {
+            "connected_to": "Battery Control Unit",
+            "controls": "Manages daisy chain connections"
+          }
+        }
+      
+    ,
+    
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "name": "ElectricMotor",
+        "type": "AC Motor",
+        "material": "Aluminum",
+        "description": {
+          "usage": "Main motor for driving the vehicle."
+        },
+        "specifications": {
+          "efficiency": "95%",
+          "rpm": "15000"
+        }
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "name": "Transmission",
+        "type": "Automatic",
+        "material": "Steel",
+        "description": "Transmission system for the electric motor.",
+        "specifications": "Gear ratios: 2.5:1"
+      }
+    ]
+  }
+
+  

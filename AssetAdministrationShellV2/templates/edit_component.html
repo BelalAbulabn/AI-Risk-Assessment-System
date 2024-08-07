@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %}Edit Component{% endblock %}
+{% block content %}
+    <h1>Edit Component</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.submodel_id.label }} {{ form.submodel_id(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.name.label }} {{ form.name(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.type.label }} {{ form.type(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.material.label }} {{ form.material(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.operating_conditions.label }} {{ form.operating_conditions(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.usage_patterns.label }} {{ form.usage_patterns(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.description.label }} {{ form.description(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.failure_modes.label }} {{ form.failure_modes(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.specifications.label }} {{ form.specifications(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.mitigation_measures.label }} {{ form.mitigation_measures(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.dependencies.label }} {{ form.dependencies(class_="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.interactions.label }} {{ form.interactions(class_="form-control") }}
+        </div>
+
+        <div class="form-group">
+            {{ form.submit(class_="btn btn-primary") }}
+        </div>
+    </form>
+{% endblock %}

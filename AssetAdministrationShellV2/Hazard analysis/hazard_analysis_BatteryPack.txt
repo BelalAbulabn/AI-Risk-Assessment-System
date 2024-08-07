@@ -1,0 +1,123 @@
+Asset Administration Shell Name: GlobalAssetID_001
+Submodel Name: Submodel_002
+Property Key: PropertyKey2, Property Value: PropertyValue2
+Component Name: BatteryPack
+Hazard Response:
+[
+  {
+    "hazard": "Overheating",
+    "type": "Thermal",
+    "description": "Risk of thermal runaway due to high temperatures during operation.",
+    "detection_method": "Temperature sensors",
+    "mitigation_measure": "Cooling system"
+  },
+  {
+    "hazard": "Capacity degradation",
+    "type": "Operational",
+    "description": "Reduction in battery capacity over time affecting performance.",
+    "detection_method": "Battery management system monitoring",
+    "mitigation_measure": "Regular monitoring and calibration"
+  },
+  {
+    "hazard": "Short circuit",
+    "type": "Electrical",
+    "description": "Risk of short circuit leading to damage or fire.",
+    "detection_method": "Circuit protection devices",
+    "mitigation_measure": "Fuse protection"
+  },
+  {
+    "hazard": "Overcharging",
+    "type": "Electrical",
+    "description": "Risk of overcharging the battery beyond safe limits.",
+    "detection_method": "Voltage monitoring system",
+    "mitigation_measure": "Overcharge protection circuit"
+  },
+  {
+    "hazard": "Power supply failure",
+    "type": "Hardware",
+    "description": "Loss of power supply leading to device shutdown or malfunction.",
+    "detection_method": "Power supply monitoring",
+    "mitigation_measure": "Redundant power supply system"
+  },
+  {
+    "hazard": "Corrosion",
+    "type": "Material",
+    "description": "Risk of lithium material corrosion affecting battery performance.",
+    "detection_method": "Regular material inspection",
+    "mitigation_measure": "Material coating protection"
+  },
+  {
+    "hazard": "Software malfunction",
+    "type": "Software",
+    "description": "Risk of battery management system software failure.",
+    "detection_method": "Software testing and monitoring",
+    "mitigation_measure": "Regular software updates and backups"
+  }
+]
+
+Asset Administration Shell Name: GlobalAssetID_001
+Submodel Name: Submodel_002
+Property Key: PropertyKey2, Property Value: PropertyValue2
+Component Name: BatteryPack
+Hazard Response:
+[
+  {
+    "hazard": "Overheating",
+    "type": "Thermal",
+    "description": "Risk of thermal runaway in the Lithium-Ion battery pack",
+    "detection_method": "Temperature sensors",
+    "mitigation_measure": "Cooling system"
+  },
+  {
+    "hazard": "Capacity degradation",
+    "type": "Chemical",
+    "description": "Reduction in battery capacity over time",
+    "detection_method": "Battery management system monitoring",
+    "mitigation_measure": "Regular monitoring and calibration",
+    "severity": "0",
+    "risk": "SIL2"
+  },
+  {
+    "hazard": "Short circuit",
+    "type": "Electrical",
+    "description": "Potential for a short circuit in the battery pack",
+    "detection_method": "Internal circuit protection",
+    "mitigation_measure": "Fuse protection"
+  },
+  {
+    "hazard": "Overcharging",
+    "type": "Electrical",
+    "description": "Risk of overcharging the battery pack",
+    "detection_method": "Battery management system",
+    "mitigation_measure": "Charge control algorithm"
+  },
+  {
+    "hazard": "Humidity exposure",
+    "type": "Environmental",
+    "description": "Exposure to high humidity levels leading to potential corrosion",
+    "detection_method": "Humidity sensors",
+    "mitigation_measure": "Sealed battery pack design"
+  },
+  {
+    "hazard": "Voltage spike",
+    "type": "Electrical",
+    "description": "Sudden increase in voltage leading to potential damage",
+    "detection_method": "Voltage monitoring system",
+    "mitigation_measure": "Surge protection devices"
+  },
+  {
+    "hazard": "Software malfunction",
+    "type": "Software",
+    "description": "Faulty battery management system software leading to incorrect operation",
+    "detection_method": "Software monitoring and testing",
+    "mitigation_measure": "Regular software updates and patches"
+  },
+  {
+    "hazard": "Physical damage",
+    "type": "Mechanical",
+    "description": "External impact or shock causing physical damage to the battery pack",
+    "detection_method": "Impact sensors",
+    "mitigation_measure": "Shock-absorbing casing"
+  }
+]
+

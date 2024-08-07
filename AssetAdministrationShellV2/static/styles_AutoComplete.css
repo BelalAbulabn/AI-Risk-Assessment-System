@@ -1,0 +1,157 @@
+/* General styling for body and typography */
+body {
+    background-color: #f5f7fa;  /* Lighter background for subtle contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;  /* Improved line spacing for better readability */
+    color: #343a40;  /* Darker text color for readability */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px;  /* Slightly wider container for more content space */
+    margin: 30px auto;  /* Center the container with margin auto */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);  /* Softer shadow for depth */
+}
+
+.title {
+    color: #212529;  /* Darker color for titles */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.5rem;  /* Larger font size for better emphasis */
+}
+
+.form-group {
+    margin-bottom: 20px;  /* Consistent spacing between form groups */
+}
+
+.select {
+    margin-bottom: 20px;
+    border-radius: 5px;  /* Rounded corners for selects */
+    border: 1px solid #ced4da;
+    padding: 8px;
+    background-color: #ffffff;
+    color: #495057;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.select:hover, .select:focus {
+    border-color: #80bdff;  /* Highlighted border color on focus/hover */
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #007bff;  /* Bootstrap primary color for buttons */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Darker shade for hover effect */
+}
+
+.contenteditable {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    min-height: 180px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);  /* Subtle inner shadow for depth */
+    transition: border-color 0.2s ease;
+}
+
+.contenteditable:focus {
+    outline: none;
+    border-color: #007bff;  /* Highlight border on focus */
+}
+
+.suggestion {
+    color: #6c757d;
+    font-style: italic;
+    background-color: #f8f9fa;  /* Light background for suggestions */
+    padding: 0 2px;
+}
+
+.list-group {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+    padding-left: 0;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: 10px;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+    border-color: #adb5bd;
+}
+
+.arrow-container {
+    position: relative;
+    height: 60px;
+    margin: 30px 0;
+}
+
+.arrow-container .stick {
+    width: 4px;
+    height: 50px;
+    background-color: #6c757d;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrow-container .arrow {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #6c757d;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.loading-message {
+    color: #6c757d;
+    font-style: italic;
+    margin-top: 12px;
+    display: none;  /* Ensure it's hidden initially */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .title {
+        font-size: 1.25rem;  /* Adjust title size for smaller screens */
+    }
+
+    .contenteditable {
+        min-height: 120px;
+    }
+}

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 50px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#bag {
+    margin-top: 20px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#json-output {
+    margin-top: 20px;
+    white-space: pre-wrap;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.arrow, .back-arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.arrow {
+    border-top: 10px solid black;
+}
+
+.back-arrow {
+    border-bottom: 10px solid red; 
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stick {
+    width: 2px;
+    height: 30px;
+    background-color: black;
+}
+
+.side-failure {
+    width: 2px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+}
+
+.side-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid red; 
+    position: absolute;
+    right: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#loading-message, #loading-message-evaluation, #loading-message-control, #loading-message-residual {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    text-align: center; 
+}

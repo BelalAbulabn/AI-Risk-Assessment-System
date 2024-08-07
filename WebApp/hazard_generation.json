@@ -1,0 +1,9 @@
+{
+    "hazards": [
+        "Failure of ABS control module leading to loss of braking function",
+        "Incorrect signals from ABS control module causing erratic braking behavior",
+        "Corrosion or water ingress in ABS control module affecting performance",
+        "Overheating of ABS control module leading to malfunction",
+        "Software malfunction in ABS control module causing braking system failure"
+    ]
+}

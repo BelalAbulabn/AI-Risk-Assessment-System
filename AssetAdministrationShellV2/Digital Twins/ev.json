@@ -1,0 +1,371 @@
+{
+    "aas": [
+      {
+        "id": 1,
+        "global_asset_id": "GlobalAssetID_Auto001",
+        "asset_kind": "Instance",
+        "model_type": "AssetAdministrationShell",
+        "category": "Automotive",
+        "description": "Asset Administration Shell for an Electric Vehicle.",
+        "display_name": "EV_AAS",
+        "embedded_data_specifications": {
+          "documentation": "https://example.com/docs/electric_vehicle"
+        },
+        "extensions": {
+          "warrantyPeriod": "5 years"
+        },
+        "id_short": "EV_AAS_01",
+        "derived_from": null
+      }
+    ],
+    "submodels": [
+      {
+        "id": 2,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BatteryManagement",
+            "type": "Global"
+          }
+        ],
+        "name": "BatteryManagement_001",
+        "description": "Submodel describing the battery management system."
+      },
+      {
+        "id": 3,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "DriveTrain",
+            "type": "Global"
+          }
+        ],
+        "name": "DriveTrain_001",
+        "description": "Submodel describing the drive train system."
+      },
+      {
+        "id": 4,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ChargingSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "ChargingSystem_001",
+        "description": "Submodel describing the charging system."
+      },
+      {
+        "id": 5,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "Infotainment",
+            "type": "Global"
+          }
+        ],
+        "name": "Infotainment_001",
+        "description": "Submodel describing the infotainment system."
+      },
+      {
+        "id": 6,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ClimateControl",
+            "type": "Global"
+          }
+        ],
+        "name": "ClimateControl_001",
+        "description": "Submodel describing the climate control system."
+      },
+      {
+        "id": 7,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ADAS",
+            "type": "Global"
+          }
+        ],
+        "name": "ADAS_001",
+        "description": "Submodel describing the advanced driver-assistance systems."
+      },
+      {
+        "id": 8,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "SuspensionSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "SuspensionSystem_001",
+        "description": "Submodel describing the suspension system."
+      },
+      {
+        "id": 9,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BrakingSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "BrakingSystem_001",
+        "description": "Submodel describing the braking system."
+      },
+      {
+        "id": 10,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "SteeringSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "SteeringSystem_001",
+        "description": "Submodel describing the steering system."
+      },
+      {
+        "id": 11,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "Telematics",
+            "type": "Global"
+          }
+        ],
+        "name": "Telematics_001",
+        "description": "Submodel describing the telematics system."
+      },
+      {
+        "id": 12,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "LightingSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "LightingSystem_001",
+        "description": "Submodel describing the lighting system."
+      },
+      {
+        "id": 13,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "NavigationSystem",
+            "type": "Global"
+          }
+        ],
+        "name": "NavigationSystem_001",
+        "description": "Submodel describing the navigation system."
+      },
+      {
+        "id": 14,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "InteriorFeatures",
+            "type": "Global"
+          }
+        ],
+        "name": "InteriorFeatures_001",
+        "description": "Submodel describing the interior features."
+      },
+      {
+        "id": 15,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ExteriorFeatures",
+            "type": "Global"
+          }
+        ],
+        "name": "ExteriorFeatures_001",
+        "description": "Submodel describing the exterior features."
+      },
+      {
+        "id": 16,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "SafetyFeatures",
+            "type": "Global"
+          }
+        ],
+        "name": "SafetyFeatures_001",
+        "description": "Submodel describing the safety features."
+      },
+      {
+        "id": 17,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "Connectivity",
+            "type": "Global"
+          }
+        ],
+        "name": "Connectivity_001",
+        "description": "Submodel describing the connectivity features."
+      },
+      {
+        "id": 18,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "PowerElectronics",
+            "type": "Global"
+          }
+        ],
+        "name": "PowerElectronics_001",
+        "description": "Submodel describing the power electronics system."
+      },
+      {
+        "id": 19,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "ThermalManagement",
+            "type": "Global"
+          }
+        ],
+        "name": "ThermalManagement_001",
+        "description": "Submodel describing the thermal management system."
+      },
+      {
+        "id": 20,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "EnergyStorage",
+            "type": "Global"
+          }
+        ],
+        "name": "EnergyStorage_001",
+        "description": "Submodel describing the energy storage system."
+      },
+      {
+        "id": 21,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BodyControl",
+            "type": "Global"
+          }
+        ],
+        "name": "BodyControl_001",
+        "description": "Submodel describing the body control system."
+      },
+      {
+        "id": 22,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "VehicleDynamics",
+            "type": "Global"
+          }
+        ],
+        "name": "VehicleDynamics_001",
+        "description": "Submodel describing the vehicle dynamics."
+      }
+    ],
+    "properties": [
+      {
+        "id": 2,
+        "submodel_id": 2,
+        "key": "BatteryCapacity",
+        "value": "75 kWh"
+      },
+      {
+        "id": 3,
+        "submodel_id": 2,
+        "key": "Range",
+        "value": "300 miles"
+      },
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "key": "MotorPower",
+        "value": "200 kW"
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "key": "Torque",
+        "value": "350 Nm"
+      }
+    ],
+    "components": [
+      {
+        "id": 2,
+        "submodel_id": 2,
+        "name": "BatteryPack",
+        "type": "Lithium-Ion",
+        "material": "Lithium",
+        "description": {
+          "usage": "Main battery pack for the electric vehicle."
+        },
+        "specifications": {
+          "voltage": "400V",
+          "current": "150A"
+        }
+      },
+      {
+        "id": 3,
+        "submodel_id": 2,
+        "name": "CoolingSystem",
+        "type": "Coolant",
+        "material": "Coolant Fluid",
+        "description": "Cooling system for the battery pack.",
+        "specifications": "Flow rate: 10 L/min"
+      },
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "name": "ElectricMotor",
+        "type": "AC Motor",
+        "material": "Aluminum",
+        "description": {
+          "usage": "Main motor for driving the vehicle."
+        },
+        "specifications": {
+          "efficiency": "95%",
+          "rpm": "15000"
+        }
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "name": "Transmission",
+        "type": "Automatic",
+        "material": "Steel",
+        "description": "Transmission system for the electric motor.",
+        "specifications": "Gear ratios: 2.5:1"
+      }
+    ]
+  }
+  

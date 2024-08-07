@@ -1,0 +1,124 @@
+{
+    "aas": [
+      {
+        "id": 1,
+        "global_asset_id": "GlobalAssetID_Auto001",
+        "asset_kind": "Instance",
+        "model_type": "AssetAdministrationShell",
+        "category": "Automotive",
+        "description": "Asset Administration Shell for an Electric Vehicle.",
+        "display_name": "EV_AAS",
+        "embedded_data_specifications": {
+          "documentation": "https://example.com/docs/electric_vehicle"
+        },
+        "extensions": {
+          "warrantyPeriod": "5 years"
+        },
+        "id_short": "EV_AAS_01",
+        "derived_from": null
+      }
+    ],
+    "submodels": [
+      {
+        "id": 2,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "BatteryManagement",
+            "type": "Global"
+          }
+        ],
+        "name": "BatteryManagement_001",
+        "description": "Submodel describing the battery management system."
+      },
+      {
+        "id": 3,
+        "aas_id": 1,
+        "type": "ModelReference",
+        "keys": [
+          {
+            "key": "DriveTrain",
+            "type": "Global"
+          }
+        ],
+        "name": "DriveTrain_001",
+        "description": "Submodel describing the drive train system."
+      }
+    ],
+    "properties": [
+      {
+        "id": 2,
+        "submodel_id": 2,
+        "key": "BatteryCapacity",
+        "value": "75 kWh"
+      },
+      {
+        "id": 3,
+        "submodel_id": 2,
+        "key": "Range",
+        "value": "300 miles"
+      },
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "key": "MotorPower",
+        "value": "200 kW"
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "key": "Torque",
+        "value": "350 Nm"
+      }
+    ],
+    "components": [
+      {
+        "id": 2,
+        "submodel_id": 2,
+        "name": "BatteryPack",
+        "type": "Lithium-Ion",
+        "material": "Lithium",
+        "description": {
+          "usage": "Main battery pack for the electric vehicle."
+        },
+        "specifications": {
+          "voltage": "400V",
+          "current": "150A"
+        }
+      },
+      {
+        "id": 3,
+        "submodel_id": 2,
+        "name": "CoolingSystem",
+        "type": "Coolant",
+        "material": "Coolant Fluid",
+        "description": "Cooling system for the battery pack.",
+        "specifications": "Flow rate: 10 L/min"
+      },
+      {
+        "id": 4,
+        "submodel_id": 3,
+        "name": "ElectricMotor",
+        "type": "AC Motor",
+        "material": "Aluminum",
+        "description": {
+          "usage": "Main motor for driving the vehicle."
+        },
+        "specifications": {
+          "efficiency": "95%",
+          "rpm": "15000"
+        }
+      },
+      {
+        "id": 5,
+        "submodel_id": 3,
+        "name": "Transmission",
+        "type": "Automatic",
+        "material": "Steel",
+        "description": "Transmission system for the electric motor.",
+        "specifications": "Gear ratios: 2.5:1"
+      }
+    ]
+  }
+  
