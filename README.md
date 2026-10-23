@@ -27,44 +27,11 @@ flowchart LR
     H --> I[Evaluate and compare]
 ```
 
-## Results
+## Key results
 
-### Model benchmark on the risk management task
-
-Accuracy relative to GPT-4, rated by GPT-4 and by human evaluation:
-
-| Model | GPT-4 evaluation | Human evaluation |
-|---|---|---|
-| GPT-4 | 100.0% | 100.0% |
-| Llama-3.1-70B-Instruct | 85.0% | 87.0% |
-| Qwen2-72B-Instruct | 83.8% | 82.2% |
-| Mistral-7B-Instruct | 82.0% | 80.0% |
-| Llama 8B Instruct | 76.4% | 72.0% |
-
-### Which public benchmarks predict risk analysis performance?
-
-Testing models directly on risk analysis costs time and money. I therefore correlated the results with general benchmarks:
-
-| Pair | Pearson r | p-value |
-|---|---|---|
-| Human eval vs. GPQA | 0.948 | 0.014 |
-| GPT-4 eval vs. GPQA | 0.900 | 0.037 |
-| Human eval vs. MMLU | 0.802 | 0.102 |
-| GPT-4 eval vs. MMLU | 0.745 | 0.149 |
-| Human eval vs. GPT-4 eval | 0.982 | 0.003 |
-
-GPQA (scientific reasoning) is a strong and significant predictor, so it is a good first filter when choosing a model for risk analysis. The high agreement between human and GPT-4 ratings also shows that GPT-4 works well as an automatic evaluator for this task.
-
-### Fine-tuning a small model
-
-GPT-4 outputs that had been reviewed were used as training data (knowledge distillation) to fine-tune Llama 8B with LoRA (instruction fine-tuning):
-
-| Metric | Before | After | Change |
-|---|---|---|---|
-| GPT-4 evaluation | 76.4% | 81.0% | +4.6 pp |
-| Human evaluation | 72.0% | 77.0% | +5.0 pp |
-
-The fine-tuned 8B model narrows the gap to much larger models, while staying cheap and fast enough to run locally.
+- Benchmarked several LLMs (GPT-4, Llama, Qwen, Mistral) on the risk management task, rated by GPT-4 and by human evaluation.
+- Found that the public GPQA benchmark is a strong predictor of risk analysis performance, which makes model selection cheaper.
+- Fine-tuned Llama 8B with LoRA on reviewed GPT-4 outputs (knowledge distillation). The small model improved clearly and can run locally.
 
 ## Tech stack
 
