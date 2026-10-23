@@ -29,9 +29,17 @@ flowchart LR
 
 ## Key results
 
-- Benchmarked several LLMs (GPT-4, Llama, Qwen, Mistral) on the risk management task, rated by GPT-4 and by human evaluation.
-- Found that the public GPQA benchmark is a strong predictor of risk analysis performance, which makes model selection cheaper.
-- Fine-tuned Llama 8B with LoRA on reviewed GPT-4 outputs (knowledge distillation). The small model improved clearly and can run locally.
+**1. Benchmarked several LLMs on the risk management task**, rated by GPT-4 and by human evaluation.
+
+![Model benchmark](docs/model_benchmark.png)
+
+**2. The public GPQA benchmark is a strong predictor of risk analysis performance**, so it can be used to pick a model without expensive task-specific testing.
+
+![GPQA correlation](docs/gpqa_correlation.png)
+
+**3. Fine-tuned Llama 8B with LoRA on reviewed GPT-4 outputs** (knowledge distillation). The small model improved clearly and can run locally.
+
+![Fine-tuning results](docs/finetuning_results.png)
 
 ## Tech stack
 
