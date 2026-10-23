@@ -1,3 +1,4 @@
+import os
 # from llm import gpt_model_call
 import json
 # from openai import OpenAI
@@ -25,7 +26,7 @@ import openai
 #         self.prompt_filled = self.prompt_filled.replace("{{dic_key_value}}", dic_key_value)
 #         self.prompt_filled = self.prompt_filled.replace("{{selected_row}}", selected_row)
 #         self.prompt_filled = self.prompt_filled.replace("{{dic}}", dic)
-#         openai.api_key="sk-proj-s8M1DdVV7EAvK98QwrNrT3BlbkFJu2oPxJp2dqHJRlKsxaMt"
+#         openai.api_key=os.getenv("OPENAI_API_KEY")
 #         print(openai.api_key)
 #         print("***********************")
 #         # print(input_text)
@@ -78,7 +79,7 @@ import openai
 #         self.prompt_filled = self.prompt_filled.replace("{{dic_key_value}}", dic_key_value)
 #         self.prompt_filled = self.prompt_filled.replace("{{selected_row}}", selected_row)
 #         self.prompt_filled = self.prompt_filled.replace("{{dic}}", dic)
-#         openai.api_key="sk-proj-s8M1DdVV7EAvK98QwrNrT3BlbkFJu2oPxJp2dqHJRlKsxaMt"
+#         openai.api_key=os.getenv("OPENAI_API_KEY")
 #         print(openai.api_key)
 #         # print(input_text)
 #         print("***********************")

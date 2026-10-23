@@ -20,7 +20,7 @@ print("API Key Set:", openai.api_key)  # This should print the key to confirm it
 print("API Key Set:", openai.api_key)  # This should print the key to confirm it's set
 
 agent = BrainstormingAgent()
-# openai.api_key ="sk-proj-ETFsJX268RMex0DnMBXLT3BlbkFJte8z9HsVVPtrYCLYsxja"
+# openai.api_key =os.getenv("OPENAI_API_KEY")
 
 print("API Key Set:", openai.api_key)  # This should print the key to confirm it's set
 @cache.memoize(timeout=86400)
